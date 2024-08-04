@@ -28,7 +28,105 @@
               src: url('fonts/Montserrat/static/Montserrat-Bold.ttf');
           }
 
-          @media (max-width: 600px) {
+          @media (max-width: 460px) {
+              .imgFlacon {
+                  border-radius: 10px 10px 0 0;
+                  width: 100%;
+                  height: auto;
+                  max-width: 418px;
+              }
+
+              .price {
+                  color: hsl(158, 36%, 37%);
+                  font-family: Fraunces,serif;
+                  font-size: 32px;
+                  font-weight: bold;
+              }
+
+              .priceBar {
+                  align-items: center;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  margin: 24px 0;
+              }
+
+              .priceOld {
+                  color: hsl(228, 12%, 48%);
+                  justify-content: flex-end;
+                  display: flex;
+                  font-size: 14px;
+              }
+
+              article {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-auto-rows: auto;
+                  height: 100%;
+                  padding: 24px;
+              }
+
+              button {
+                  align-items: center;
+                  background-color: hsl(158, 36%, 37%);
+                  border: 0;
+                  border-radius: 10px;
+                  color: hsl(0, 0%, 100%);
+                  display: flex;
+                  flex-direction: row;
+                  font-family: Montserrat,sans-serif;
+                  font-weight: bold;
+                  justify-content: center;
+                  padding: 16px 0;
+                  width: 100%;
+              }
+
+              button:hover {
+                  background-color: hsl(158, 36%, 25%);
+              }
+
+              h1 {
+                  color: hsl(212, 21%, 14%);
+                  font-family: Fraunces,serif;
+                  font-size: 32px;
+                  font-weight: bold;
+                  margin: 10px 0;
+              }
+
+              header label {
+                  color: hsl(228, 12%, 48%);
+                  font-family: Montserrat,sans-serif;
+                  font-weight: bold;
+              }
+
+              main {
+                  background-color: hsl(0, 0%, 100%);
+                  border-radius: 10px;
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-auto-rows: auto;
+                  margin: 28px 16px;
+                  max-width: 418px;
+                  width: 100%;
+              }
+
+              p {
+                  color: hsl(228, 12%, 48%);
+                  font-size: 14px;
+                  line-height: 175%;
+                  margin: 0;
+              }
+          }
+
+          @media (min-width: 461px) and (max-width: 600px) {
+              .imgFlacon {
+                  border-radius: 10px 0 0 10px;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  max-width: 300px;
+                  vertical-align: bottom;
+              }
+
               .price {
                   color: hsl(158, 36%, 37%);
                   font-family: Fraunces,serif;
@@ -53,8 +151,8 @@
                   display: grid;
                   grid-template-columns: 1fr;
                   grid-auto-rows: auto;
-                  height: calc(100%-64px);
-                  max-height: 386px;
+                  height: 100%;
+                  max-height: 450px;
                   padding: 32px;
               }
 
@@ -92,14 +190,34 @@
                   font-size: 12px;
               }
 
+              main {
+                  background-color: hsl(0, 0%, 100%);
+                  border-radius: 10px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  margin: 174px 0;
+                  max-width: 600px;
+                  width: 100%;
+              }
+
               p {
                   color: hsl(228, 12%, 48%);
                   font-size: 12px;
+                  line-height: 150%;
                   margin: 0;
               }
           }
 
           @media (min-width: 601px) {
+              .imgFlacon {
+                  border-radius: 10px 0 0 10px;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  max-width: 300px;
+                  vertical-align: bottom;
+              }
+
               .price {
                   color: hsl(158, 36%, 37%);
                   font-family: Fraunces,serif;
@@ -124,7 +242,7 @@
                   grid-template-columns: 1fr;
                   grid-auto-rows: auto;
                   height: 100%;
-                  max-height: 386px;
+                  max-height: 450px;
                   padding: 32px;
               }
 
@@ -161,11 +279,27 @@
                   font-weight: bold;
               }
 
+              main {
+                  background-color: hsl(0, 0%, 100%);
+                  border-radius: 10px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  margin: 174px 0;
+                  max-width: 600px;
+                  //max-height: 450px;
+                  width: 100%;
+              }
+
               p {
                   color: hsl(228, 12%, 48%);
                   font-size: 14px;
+                  line-height: 150%;
                   margin: 0;
               }
+          }
+
+          * {
+              box-sizing: border-box;
           }
 
           .attribution {
@@ -175,13 +309,6 @@
 
           .attribution a {
               color: hsl(228, 45%, 44%);
-          }
-
-          .imgFlacon {
-              border-radius: 10px 0 0 10px;
-              width: 100%;
-              height: auto;
-              max-width: 300px;
           }
 
           body {
@@ -209,14 +336,10 @@
               font-weight: bold;
           }
 
-          main {
-              background-color: hsl(0, 0%, 100%);
-              border-radius: 10px;
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              margin: 174px 0;
-              max-width: 600px;
-              width: 100%;
+          picture {
+              display: block;
+              margin: 0;
+              padding: 0;
           }
 
           section {
@@ -228,7 +351,11 @@
     </head>
     <body>
         <main>
-            <img class="imgFlacon" src="images/image-product-desktop.jpg" alt="image of flacon">
+            <picture>
+                <source srcset="images/image-product-mobile.jpg" media="(max-width: 460px)">
+                <source srcset="images/image-product-desktop.jpg" media="(min-width: 461px)">
+                <img class="imgFlacon" src="images/image-product-desktop.jpg" alt="image of flacon">
+            </picture>
             <article>
                 <header>
                     <label>Perfume</label>
