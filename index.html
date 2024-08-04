@@ -15,23 +15,104 @@
             font-size: 11px;
             text-align: center;
         }
+
         .attribution a {
             color: hsl(228, 45%, 44%);
+        }
+
+        .price {
+            color: hsl(158, 36%, 37%);
+            font-size: 24px;
+        }
+
+        .priceBar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+
+        .priceOld {
+            color: hsl(228, 12%, 48%);
+        }
+
+        article {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            align-items: center;
+            background-color: hsl(30, 38%, 92%);
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        button {
+            align-items: center;
+            background-color: hsl(158, 36%, 37%);
+            border: 0;
+            border-radius: 10px;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            color: hsl(0, 0%, 100%);
+            padding: 16px 0;
+            margin-top: 14px;
+        }
+
+        button label {
+            margin-left: 8px;
+        }
+
+        h1 {
+            color: hsl(212, 21%, 14%);
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        img {
+            border-radius: 10px 0 0 10px;
+            max-width: 300px;
+            height: auto;
+        }
+
+        main {
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 600px;
+            margin: 174px 0;
+            width: 100%;
+        }
+
+        p {
+            color: hsl(228, 12%, 48%);
+            margin-top: 0;
         }
       </style>
     </head>
     <body>
         <main>
-            <img>
+            <img src="images/image-product-desktop.jpg" alt="image of flacon">
             <article>
                 <header>
                     <label>Perfume</label>
                     <h1>Gabrielle Essence Eau De Parfum</h1>
                     <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
                 </header>
-                <label title="price">$149.99</label>
-                <label title="oldPrice">$169.99</label>
-                <button>Add to Cart</button>
+                <div class="priceBar" title="priceBar">
+                    <label class="price" title="price">$149.99</label>
+                    <label class="priceOld" title="oldPrice"><del>$169.99</del></label>
+                </div>
+                <button>
+                    <img src="images/icon-cart.svg" alt="cardIcon">
+                    <label>Add to Cart</label>
+                </button>
             </article>
         </main>
         <footer class="attribution">
